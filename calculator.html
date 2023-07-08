@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css" />
+    <script src="./calculator.js" defer></script>
+  </head>
+  <body>
+    <form id="form" action="">
+      <label for="first_value"
+        >first value:
+        <input type="text" name="first_value" id="first_value" class="input"
+      /></label>
+      <label for="second_value"
+        >second value:
+        <input type="text" name="second_value" id="second_value" class="input"
+      /></label>
+      <div class="flex">
+        <label for="operator"
+          >select operator:
+          <select name="operators" id="operator">
+            <option value="" class="option">--select--</option>
+            <option value="+" class="option">+</option>
+            <option value="-" class="option">-</option>
+            <option value="*" class="option">*</option>
+            <option value="/" class="option">/</option>
+            <option value="**" class="option">**</option>
+            <option value="//" class="option">//</option>
+          </select></label
+        >
+        <input for="form" type="submit" value="=" />
+      </div>
+      <label for="result"
+        >result: <input type="text" name="result" id="result" class="input"
+      /></label>
+    </form>
+  </body>
+</html>
